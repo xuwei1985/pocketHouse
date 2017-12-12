@@ -1,4 +1,8 @@
 <?php
+use frontend\assets\AppAsset;
+AppAsset::addScript($this,'@web/js/house_list.js');
+AppAsset::addScript($this,'@web/css/house_list.css');
+?>
 $this->title = '全部楼盘';
 ?>
 <div id="main_page" class="ui-box container">
