@@ -2,14 +2,14 @@
 use frontend\assets\AppAsset;
 AppAsset::addScript($this,'@web/js/house_list.js');
 AppAsset::addScript($this,'@web/css/house_list.css');
-?>
+
 $this->title = '全部楼盘';
 ?>
 <div id="main_page" class="ui-box container">
     <ul>
         <li class="house_intem list-unstyled row">
             <div class="house_info">
-                <div class="house_img"><img src="/frontend/web/images/demo.jpg" class="img-responsive" /></div>
+                <div class="house_img"><img src="/images/demo.jpg" class="img-responsive" /></div>
                 <div class="house_info">
                     <p class="house_name">新华联·奥莱悦府</p>
                     <p class="house_area">80-120㎡|2-3室</p>
@@ -17,7 +17,7 @@ $this->title = '全部楼盘';
                     <p class="house_total_price">200万起</p>
                 </div>
                 <div class="house_return">
-                    <div class="return_img"><img src="/frontend/web/images/pocket_house_logo.png" /></div>
+                    <div class="return_img"><img src="/images/pocket_house_logo.png" /></div>
                     <div class="return_img">
                         <p>口袋返现</p>
                         <p class="return_price">3-6万/套</p>
@@ -30,7 +30,7 @@ $this->title = '全部楼盘';
         </li>
         <li class="house_intem list-unstyled">
             <div class="house_info">
-                <div class="house_img"><img src="/frontend/web/images/demo.jpg" /></div>
+                <div class="house_img"><img src="/images/demo.jpg" /></div>
                 <div class="house_info">
                     <p class="house_name">新华联·奥莱悦府</p>
                     <p class="house_area">80-120㎡|2-3室</p>
@@ -38,7 +38,7 @@ $this->title = '全部楼盘';
                     <p class="house_total_price">200万起</p>
                 </div>
                 <div class="house_return">
-                    <div class="return_img"><img src="/frontend/web/images/pocket_house_logo.png" /></div>
+                    <div class="return_img"><img src="/pocket_house_logo.png" /></div>
                     <div class="return_img">
                         <p>口袋返现</p>
                         <p class="return_price">3-6万/套</p>
