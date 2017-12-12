@@ -33,6 +33,10 @@ return [
                 ],
             ],
         ],
+        'assetManager' => [
+            'appendTimestamp' => true,
+            'forceCopy' => false,
+        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
