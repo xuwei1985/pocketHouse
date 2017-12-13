@@ -1,11 +1,25 @@
 <?php
 use frontend\assets\AppAsset;
 AppAsset::addScript($this,'@web/js/house_list.js?t='.time());
+AppAsset::addScript($this,'@web/js/swiper.min.js');
+AppAsset::addCss($this,'@web/css/swiper.min.css');
 AppAsset::addCss($this,'@web/css/house_list.css?t='.time());
 
 $this->title = '全部楼盘';
 ?>
 <div id="main_page" >
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://fsxf.fangdd.com/xfcms/Fm4tLv3aGyJjnLYD-tw9G-zXLMRw.jpg" width="100%" /></div>
+            <div class="swiper-slide"><img src="https://fsxf.fangdd.com/xfcms/FrW-w6PNE_UioWn18RzFiN_1_ljv.jpg" width="100%" /></div>
+            <div class="swiper-slide"><img src="https://fsxf.fangdd.com/xfcms/FntmyQngCAeoW2h_SQWgCZCXsPXu.jpg" width="100%" /></div>
+            <div class="swiper-slide"><img src="https://fsxf.fangdd.com/xfcms/FjnOmowuuTdiW5Nm77-_DoBiHWAQ.jpg" width="100%" /></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
     <ul id="house_list">
         <li class="house_item list-unstyled">
             <div class="house_info">
