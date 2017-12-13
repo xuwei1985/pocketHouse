@@ -16,7 +16,35 @@
 }
 
 
-ul{
+#choose_bar{
+    width: 100%;
+    background-color: #fafafa
+}
+
+#choose_bar ul{
+    width: 100%;
+}
+
+
+#choose_bar li{
+    list-style: none;
+    float: left;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+
+}
+
+#choose_bar li span{
+    font-weight: bold;
+    color: #333;
+}
+
+
+#house_list{
     padding:10px 10px;
 }
 
