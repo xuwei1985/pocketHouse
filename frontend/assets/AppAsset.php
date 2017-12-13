@@ -26,11 +26,11 @@ class AppAsset extends AssetBundle
 
     //定义按需加载JS方法，注意加载顺序在最后
     public static function addScript($view, $jsfile) {
-        $view->registerJsFile($jsfile, [AppAsset::className(), 'depends' =>  'yii\web\YiiAsset']);
+        $view->registerJsFile($jsfile, [AppAsset::className(), 'depends' =>  'frontend\assets\AppAsset']);
     }
 
     //定义按需加载css方法，注意加载顺序在最后
     public static function addCss($view, $cssfile) {
-        $view->registerCssFile($cssfile, [AppAsset::className(), 'depends' => 'yii\web\YiiAsset']);
+        $view->registerCssFile($cssfile, [AppAsset::className(), 'depends' => 'frontend\assets\AppAsset']);
     }
 }

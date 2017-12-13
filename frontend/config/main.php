@@ -33,17 +33,21 @@ return [
                 ],
             ],
         ],
+        'assetManager' => [
+            'appendTimestamp' => true,
+            'forceCopy' => false,
+        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+
     ],
     'params' => $params,
 ];

@@ -1,3 +1,41 @@
 #main_page{
 
 }
+
+ul{
+    padding:0 10px;
+}
+
+.house_item{
+    border-bottom: 1px solid #efefef;
+    padding: 10px 0;
+}
+
+.house_info{
+
+}
+
+.house_img{
+    float: left;
+    width: 32%;
+}
+
+.house_img img{
+    width: 100%;
+}
+
+.house_summary{
+    float: left;
+    width: 38%;
+    margin-left: 2%;
+}
+
+.house_return{
+    float: right;
+    width: 28%;
+    text-align: center;
+}
+
+.house_return .return_img img{
+    width: 56px;
+}
