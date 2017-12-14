@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "fdd";
+    src: url("../font/fdd.eot");
+    src: url("../font/fdd.eot#iefix") format("embedded-opentype"), url("../font/fdd.woff") format("woff"), url("../font/fdd.ttf") format("truetype"), url("../font/fdd.svg") format("svg")
+}
+
 #main_page{
 
 }
@@ -15,18 +21,84 @@
     background: #fff;
 }
 
-
-#choose_bar{
+#search_bloak{
     width: 100%;
-    background-color: #fafafa
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #f2f2f2;
+    z-index: 1;
+    position: relative;
+    height: 44px;
+    padding: 5px 0;
 }
 
-#choose_bar ul{
-    width: 100%;
+.search_bar{
+    width: 90%;
+    overflow: hidden;
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex: 1;
+    position: relative;
+    height: 34px;
+    margin: 0px auto;
+    background: #fff;
+    border-radius: 34px;
+}
+
+.inp-search{
+    -webkit-box-flex: 1;
+    flex: 1;
+    padding: 9px 0;
+    vertical-align: middle;
+    line-height: normal;
+    background: 0 0;
+    font-size: 14px !important;
+    color: #555;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.ic-search:after{
+    font-size: 17px;
+    margin: 0 10px;
+    content: "\f04b";
+    color: #666;
+    font-size: 21px;
+    box-sizing: border-box;
+    color: #333;
 }
 
 
-#choose_bar li{
+#choose_block{
+    width: 100%;
+    background-color: #fafafa;
+    z-index: 1;
+    position: relative;
+}
+
+.choose_bar{
+    background-color: #fafafa;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.choose_bar_fixed{
+    position: fixed;
+    top:0;
+    left: 0;
+}
+
+.choose_bar ul{
+    width: 100%;
+}
+
+.choose_bar li{
     list-style: none;
     float: left;
     width: 25%;
@@ -38,9 +110,133 @@
 
 }
 
-#choose_bar li span{
+.choose_bar li span{
     font-weight: bold;
     color: #333;
+}
+
+
+.choose_bar li i{
+    box-sizing: border-box;
+    display: inline-block;
+    padding-right: 15px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.choose_bar li i:after{
+    content: "";
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    margin-top: -2px;
+    border-style: solid;
+    border-width: 4px 4px 0;
+    border-color: #999 transparent transparent;
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+}
+
+
+.choose_bar li .on i:after {
+    border-top-color: #ff611b;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.choose_house_type,.choose_house_flat,.choose_house_price,.choose_house_area{
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    height: 320px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.choose_house_type li ,.choose_house_flat li,.choose_house_price li,.choose_house_area li{
+    background: #fff;
+    position: relative;
+    padding: 0 10px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    line-height: 45px;
+    min-height: 45px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.choose_house_type li h5,.choose_house_flat li h5,.choose_house_price li h5,choose_house_area li h5{
+    font-size: 14px;
+    color: #555;
+}
+
+.choose_house_type li:hover h5,.choose_house_flat li:hover h5,.choose_house_price li:hover h5,.choose_house_area li:hover h5{
+    font-size: 14px;
+    color: #00afe8;
+}
+
+.choose_house_area{
+    height: 320px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.choose_house_area li a{
+    color: #333;
+    text-decoration: none;
+}
+
+.choose_house_area li:hover a{
+    color: #00afe8;
+}
+
+.choose_house_area .ui-area-left li{
+    background: #f1f1f1;
+    border: 0;
+    padding-left: 15px;
+}
+
+
+
+.choose_house_area .ui-area-left li.on{
+    background: #fff;
+}
+
+.choose_house_area  .ui-area-left{
+    float: left;
+    width: 35%;
+    height: 320px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.choose_house_area  .ui-area-right{
+    float: left;
+    width: 65%;
+    height: 320px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.choose_house_area .ui-area-right li{
+    border: 0;
+}
+
+.choose_house_area .ui-area-right li a{
+    text-decoration: none;
+}
+
+.choose_house_area .ui-area-right li:hover a{
+    color: #00afe8;
 }
 
 

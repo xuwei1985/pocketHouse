@@ -83,13 +83,25 @@ h2, h3, h4, h5, h6, i, cite, em {
     right: -11px;
     border: 10px solid transparent;
     border-right: 10px solid #fff;
-
 }
 
 .arrow_left:before {
     border-right-color: #CDCDCD;
     right: -10px;
 }
+
+.mask{
+    display: none;
+    position:fixed;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    min-height: 40px;
+    bottom: -1px;
+    background: rgba(0, 0, 0, .7);
+}
+
 
 * {
     /*-webkit-touch-callout:none;*/
