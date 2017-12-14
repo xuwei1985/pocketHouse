@@ -48,17 +48,28 @@ function addEvent() {
         $(".ui-area-left li").removeClass("on");
         $(this).addClass("on");
     });
+
+    $(".mask").on("click",function () {
+        $(".search_block").removeClass("search_block_fixed");
+        $(".choose_bar").removeClass("choose_bar_fixed");
+        $(this).hide();
+        $(".choose_panel").hide();
+        $(".choose_bar li").find("a").removeClass("on");
+    });
+
 }
 
 //楼盘类型pannel显示与关闭
 function toggleHouseTypePanel() {
     if($(".choose_house_type").css("display")=="none"){
-        $(".choose_panel").hide();
-        $(".choose_bar").addClass("choose_bar_fixed");
-        $(".choose_house_type").fadeIn(300);
         $(".mask").fadeIn(300);
+        $(".search_block").addClass("search_block_fixed").fadeIn(300);
+        $(".choose_panel").hide();
+        $(".choose_bar").addClass("choose_bar_fixed").fadeIn(300);
+        $(".choose_house_type").fadeIn(300);
     }
     else {
+        $(".search_block").removeClass("search_block_fixed");
         $(".choose_bar li").find("a").removeClass("on");
         $(".choose_bar").removeClass("choose_bar_fixed");
         $(".choose_house_type").fadeOut(300);
@@ -69,13 +80,15 @@ function toggleHouseTypePanel() {
 //楼盘户型pannel显示与关闭
 function toggleHouseFlatPanel() {
     if($(".choose_house_flat").css("display")=="none"){
-        $(".choose_panel").hide();
-        $(".choose_bar").addClass("choose_bar_fixed");
-        $(".choose_house_flat").fadeIn(300);
         $(".mask").fadeIn(300);
+        $(".search_block").addClass("search_block_fixed").fadeIn(300);
+        $(".choose_panel").hide();
+        $(".choose_bar").addClass("choose_bar_fixed").fadeIn(300);
+        $(".choose_house_flat").fadeIn(300);
     }
     else {
         $(".choose_bar li").find("a").removeClass("on");
+        $(".search_block").removeClass("search_block_fixed");
         $(".choose_bar").removeClass("choose_bar_fixed");
         $(".choose_house_flat").fadeOut(300);
         $(".mask").fadeOut(300);
@@ -85,13 +98,15 @@ function toggleHouseFlatPanel() {
 //楼盘价格pannel显示与关闭
 function toggleHousePricePanel() {
     if($(".choose_house_price").css("display")=="none"){
-        $(".choose_panel").hide();
-        $(".choose_bar").addClass("choose_bar_fixed");
-        $(".choose_house_price").fadeIn(300);
         $(".mask").fadeIn(300);
+        $(".choose_panel").hide();
+        $(".search_block").addClass("search_block_fixed").fadeIn(300);
+        $(".choose_bar").addClass("choose_bar_fixed").fadeIn(300);
+        $(".choose_house_price").fadeIn(300);
     }
     else {
         $(".choose_bar li").find("a").removeClass("on");
+        $(".search_block").removeClass("search_block_fixed");
         $(".choose_bar").removeClass("choose_bar_fixed");
         $(".choose_house_price").fadeOut(300);
         $(".mask").fadeOut(300);
@@ -101,13 +116,26 @@ function toggleHousePricePanel() {
 //楼盘区域pannel显示与关闭
 function toggleHouseAreaPanel() {
     if($(".choose_house_area").css("display")=="none"){
-        $(".choose_panel").hide();
-        $(".choose_bar").addClass("choose_bar_fixed");
-        $(".choose_house_area").fadeIn(300);
+
+        // $(".mask").on("touchstart",function(event){
+        //     event.stopImmediatePropagation();
+        //     event.preventDefault();
+        // });
+        //
+        // $(".choose_house_area").on("touchend",function(event){
+        //     event.stopImmediatePropagation();
+        //     event.preventDefault();
+        // });
+
         $(".mask").fadeIn(300);
+        $(".choose_panel").hide();
+        $(".search_block").addClass("search_block_fixed").fadeIn(300);
+        $(".choose_bar").addClass("choose_bar_fixed").fadeIn(300);
+        $(".choose_house_area").fadeIn(300);
     }
     else {
         $(".choose_bar li").find("a").removeClass("on");
+        $(".search_block").removeClass("search_block_fixed");
         $(".choose_bar").removeClass("choose_bar_fixed");
         $(".choose_house_area").fadeOut(300);
         $(".mask").fadeOut(300);

@@ -1,6 +1,8 @@
 @font-face {
     font-family: "fdd";
-    src: url("../font/fdd.eot");
+    font-weight: normal;
+    font-style: normal;
+    src: url("../font/fdd.eot");/*IE*/
     src: url("../font/fdd.eot#iefix") format("embedded-opentype"), url("../font/fdd.woff") format("woff"), url("../font/fdd.ttf") format("truetype"), url("../font/fdd.svg") format("svg")
 }
 
@@ -21,14 +23,21 @@
     background: #fff;
 }
 
-#search_bloak{
+.search_block{
     width: 100%;
     border-bottom: 1px solid #f1f1f1;
-    background-color: #f2f2f2;
+    background-color: #fafafa;
     z-index: 1;
     position: relative;
-    height: 44px;
-    padding: 5px 0;
+    height: 50px;
+    padding: 8px 0;
+}
+
+.search_block_fixed{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
 }
 
 .search_bar{
@@ -43,7 +52,7 @@
     position: relative;
     height: 34px;
     margin: 0px auto;
-    background: #fff;
+    background: #efefef;
     border-radius: 34px;
 }
 
@@ -71,6 +80,12 @@
     font-size: 21px;
     box-sizing: border-box;
     color: #333;
+
+    font-family: fdd!important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block
 }
 
 
@@ -89,8 +104,9 @@
 }
 
 .choose_bar_fixed{
+    display: none;
     position: fixed;
-    top:0;
+    top:50px;
     left: 0;
 }
 
@@ -150,22 +166,35 @@
     transform: rotate(180deg);
 }
 
-.choose_house_type,.choose_house_flat,.choose_house_price,.choose_house_area{
+.choose_house_type,.choose_house_flat,.choose_house_price{
     display: none;
     position: fixed;
     width: 100%;
-    top: 40px;
+    top: 90px;
     left: 0;
     background: #fff;
     height: 320px;
     overflow: hidden;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;/*启用硬件加速*/
+}
+
+.choose_house_area{
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 90px;
+    left: 0;
+    background: #fff;
+    height: 320px;
+    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .choose_house_type li ,.choose_house_flat li,.choose_house_price li,.choose_house_area li{
     background: #fff;
     position: relative;
-    padding: 0 10px;
+    padding: 0 20px;
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
@@ -183,12 +212,6 @@
 .choose_house_type li:hover h5,.choose_house_flat li:hover h5,.choose_house_price li:hover h5,.choose_house_area li:hover h5{
     font-size: 14px;
     color: #00afe8;
-}
-
-.choose_house_area{
-    height: 320px;
-    overflow: hidden;
-    overflow-y: auto;
 }
 
 .choose_house_area li a{
@@ -218,13 +241,16 @@
     height: 320px;
     overflow: hidden;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;/*启用硬件加速*/
 }
+
 .choose_house_area  .ui-area-right{
     float: left;
     width: 65%;
     height: 320px;
     overflow: hidden;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;/*启用硬件加速*/
 }
 
 .choose_house_area .ui-area-right li{
