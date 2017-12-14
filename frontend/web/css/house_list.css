@@ -2,7 +2,49 @@
 
 }
 
-ul{
+.swiper-pagination-bullet{background:#efefef;}
+.swiper-pagination-bullet-active{background:#fff;}
+.swiper-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+
+
+#choose_bar{
+    width: 100%;
+    background-color: #fafafa
+}
+
+#choose_bar ul{
+    width: 100%;
+}
+
+
+#choose_bar li{
+    list-style: none;
+    float: left;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+
+}
+
+#choose_bar li span{
+    font-weight: bold;
+    color: #333;
+}
+
+
+#house_list{
     padding:10px 10px;
 }
 
@@ -43,7 +85,7 @@ ul{
 
 .house_return{
     float: right;
-    width: 70px;
+    width: 76px;
     text-align: center;
 }
 

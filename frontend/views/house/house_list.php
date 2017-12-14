@@ -1,11 +1,35 @@
 <?php
 use frontend\assets\AppAsset;
 AppAsset::addScript($this,'@web/js/house_list.js?t='.time());
+AppAsset::addScript($this,'@web/js/swiper.min.js');
+AppAsset::addCss($this,'@web/css/swiper.min.css');
 AppAsset::addCss($this,'@web/css/house_list.css?t='.time());
 
 $this->title = '全部楼盘';
 ?>
 <div id="main_page" >
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://fsxf.fangdd.com/xfcms/Fm4tLv3aGyJjnLYD-tw9G-zXLMRw.jpg" width="100%" /></div>
+            <div class="swiper-slide"><img src="https://fsxf.fangdd.com/xfcms/FrW-w6PNE_UioWn18RzFiN_1_ljv.jpg" width="100%" /></div>
+            <div class="swiper-slide"><img src="https://fsxf.fangdd.com/xfcms/FntmyQngCAeoW2h_SQWgCZCXsPXu.jpg" width="100%" /></div>
+            <div class="swiper-slide"><img src="https://fsxf.fangdd.com/xfcms/FjnOmowuuTdiW5Nm77-_DoBiHWAQ.jpg" width="100%" /></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div id="choose_bar">
+        <ul class="tab-nav ui-border-b" >
+            <li class="tag-nav-item-area" data-target=".area-chioce"data-city-id="" ><a class="on"><i><span>区域</span></i></a></li>
+            <li class="tag-nav-item-price" data-target=".price-chioce" data-city-id=""><a><i><span>价格</span></i></a></li>
+            <li class="tag-nav-item-flat" data-target=".house-chioce"  data-city-id="" ><a><i><span>户型</span></i></a></li>
+            <li class="tag-nav-item-more" data-target=".all-chioce"  data-city-id="" ><a><i><span>类型</span></i></a></li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+
     <ul id="house_list">
         <li class="house_item list-unstyled">
             <div class="house_info">
