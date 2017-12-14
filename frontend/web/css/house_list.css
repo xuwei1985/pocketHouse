@@ -21,6 +21,58 @@
     background: #fff;
 }
 
+#search_bloak{
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #f2f2f2;
+    z-index: 1;
+    position: relative;
+    height: 44px;
+    padding: 5px 0;
+}
+
+.search_bar{
+    width: 90%;
+    overflow: hidden;
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex: 1;
+    position: relative;
+    height: 34px;
+    margin: 0px auto;
+    background: #fff;
+    border-radius: 34px;
+}
+
+.inp-search{
+    -webkit-box-flex: 1;
+    flex: 1;
+    padding: 9px 0;
+    vertical-align: middle;
+    line-height: normal;
+    background: 0 0;
+    font-size: 14px !important;
+    color: #555;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.ic-search:after{
+    font-size: 17px;
+    margin: 0 10px;
+    content: "\f04b";
+    color: #666;
+    font-size: 21px;
+    box-sizing: border-box;
+    color: #333;
+}
+
 
 #choose_block{
     width: 100%;
@@ -141,6 +193,11 @@
 
 .choose_house_area li a{
     color: #333;
+    text-decoration: none;
+}
+
+.choose_house_area li:hover a{
+    color: #00afe8;
 }
 
 .choose_house_area .ui-area-left li{
@@ -172,6 +229,14 @@
 
 .choose_house_area .ui-area-right li{
     border: 0;
+}
+
+.choose_house_area .ui-area-right li a{
+    text-decoration: none;
+}
+
+.choose_house_area .ui-area-right li:hover a{
+    color: #00afe8;
 }
 
 

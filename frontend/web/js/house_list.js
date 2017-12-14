@@ -40,8 +40,13 @@ function addEvent() {
         toggleHouseAreaPanel();
     });
 
-    $("#choose_block").on("click",".choose_house_area li",function () {
+    $("#choose_block").on("click",".ui-area-right li",function () {
         toggleHouseAreaPanel();
+    });
+
+    $(".choose_house_area").on("click",".ui-area-left li",function () {
+        $(".ui-area-left li").removeClass("on");
+        $(this).addClass("on");
     });
 }
 

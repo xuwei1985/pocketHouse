@@ -19,6 +19,14 @@ $this->title = '全部楼盘';
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
+    <!--搜搜-->
+    <div id="search_bloak">
+        <div class="search_bar">
+            <i class="ic-search"></i>
+            <input class="inp-search" type="search" value="" maxlength="30" placeholder="请输入楼盘名、地址或板块" id="hit-search-keywords" name="hit-search-keywords">
+        </div>
+    </div>
+
 
     <div id="choose_block">
         <ul class="choose_bar ui-border-b" >
