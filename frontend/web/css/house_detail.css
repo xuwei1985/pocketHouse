@@ -225,3 +225,20 @@
     bottom: 0;
     z-index: 10000;
 }
+
+.pswp__counter{
+    text-align: center;
+    margin-top: 10px;
+    color: #444;
+}
+
+.pswp__button{
+    display: none;
+}
+
+
+.pswp__caption__center{
+    text-align: center;
+    margin-top: 15px;
+    color: #9c9c9c;
+}
