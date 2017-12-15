@@ -1,0 +1,227 @@
+#main_page{
+    padding:20px 0px;
+    margin-bottom: 48px;
+}
+
+.album_view{
+    display: none;
+}
+
+
+.house_summary .house_name{
+    padding: 0 15px;
+    margin: 0;
+    word-break: break-all;
+    color: #333;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+    vertical-align: bottom;
+}
+
+.house_summary .album_prev{
+    margin-top: 10px;
+    position: relative;
+    padding: 0 15px;
+}
+
+.house_summary .prev_img{
+    border-radius: 6px;
+    width: 100%;
+}
+
+.house_summary .album_icon{
+    position: absolute;
+    bottom: 8px;
+    left: 25px;
+    width: 22px;
+}
+
+.price_info{
+    padding: 0 15px;
+    margin-top: 15px;
+}
+
+.price_info{
+    margin-top: 15px;
+}
+
+.price_info .price_left{
+    float: left;
+    width: 60%;
+}
+
+.price_info .price_right{
+    float: right;
+    width: 40%;
+}
+
+.price_info b{
+    font-size: 36px;
+    color: #ef3929;
+}
+
+.price_info span{
+    margin-left: 5px;
+    font-size: 14px;
+    color: #ef3929;
+    font-weight: 500;
+}
+
+.price_right .return_img,.return_des{
+    float: right;
+}
+
+.price_right .return_des{
+    float: right;
+    margin-right: 6px;
+    text-align: right;
+}
+.price_right .return_des p{
+    font-size: 12px;
+    line-height: 22px;
+    color: #333;
+}
+
+.price_right .return_des .return_price{
+    color: #00afe8;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+.price_right .return_img img{
+    width: 40px;
+}
+
+.house_info_primary
+{
+    padding: 0 15px;
+    margin-top: 10px;
+}
+
+.house_info_primary li
+{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #f3f3f3;
+    position: relative;
+}
+
+.house_info_primary .primary-icon{
+    width: 17px;
+    position: absolute;
+    left:0;
+    top:11px;
+}
+
+.house_info_primary span{
+    font-size: 14px;
+    color: #555;
+    margin-left: 22px;
+    text-align: left;
+    width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis
+}
+
+.house_info_primary .primary-arrow{
+    position: absolute;
+    right: 2px;
+    top:11px;
+    width: 15px;
+}
+
+.house_parameter{
+    padding: 0 15px;
+    margin-top: 15px;
+}
+
+.house_parameter li{
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    width: 50%;
+    max-width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    color: #777;
+    font-size: 14px;
+    font-weight:normal;
+    line-height: 20px;
+}
+
+.house_flat{
+    margin-top: 10px;
+    border-top: 12px solid #f3f3f3;
+    padding: 0 15px;
+    position: relative;
+}
+
+.house_flat_title h2{
+    margin-top: 10px;
+    display: inline-block;
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.house_flat_list{
+    margin-top: 10px;
+}
+
+.house_flat_list li{
+    border-bottom: 1px solid #f3f3f3;
+    padding: 10px 0;
+}
+
+.house_flat .flat_img{
+    float: left;
+    margin-right: 15px;
+    border: 1px solid #eee;
+    width: 100px;
+    height: 75px;
+    overflow: hidden;
+}
+.house_flat .flat_img img{
+    width: 100px;
+    height: 75px;
+}
+
+.house_flat .flat_des{
+    float: left;
+    line-height: 24px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 300;
+}
+
+.house_flat .flat_des b{
+    color: #333;
+    font-size: 16px;
+}
+
+.house_flat .flat_price{
+    float: right;
+    max-width: 30%;
+    margin-right: 10px;
+    color: #ff611b;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 64px;
+    text-align: right;
+}
+
+.album_view{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    bottom: 0;
+    z-index: 10000;
+}
