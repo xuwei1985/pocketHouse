@@ -3,6 +3,10 @@
     margin-bottom: 48px;
 }
 
+.album_view{
+    display: none;
+}
+
 
 .house_summary .house_name{
     padding: 0 15px;
@@ -211,4 +215,13 @@
     font-weight: 500;
     line-height: 64px;
     text-align: right;
+}
+
+.album_view{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    bottom: 0;
+    z-index: 10000;
 }

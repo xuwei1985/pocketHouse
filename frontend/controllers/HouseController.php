@@ -15,4 +15,9 @@ class HouseController extends Controller{
     {
         return $this->render('house_detail');
     }
+    public function actionAlbum()
+    {
+        return $this->render('house_album');
+    }
+
 }

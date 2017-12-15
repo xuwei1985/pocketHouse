@@ -1,6 +1,8 @@
 <?php
 use frontend\assets\AppAsset;
 AppAsset::addScript($this,'@web/js/house_detail.js?t='.time());
+AppAsset::addScript($this,'@web/js/swiper.min.js');
+AppAsset::addCss($this,'@web/css/swiper.min.css');
 AppAsset::addCss($this,'@web/css/house_detail.css?t='.time());
 
 $this->title = '楼盘详情';
@@ -104,3 +106,7 @@ $this->title = '楼盘详情';
         <a id="btn_chat_mobile" type="button" class="btn-success btn" href="tel:400-820-3349">电话联系</a>
     </div>
 </div>
+
+<div class="album_page">
+</div>
+
