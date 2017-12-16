@@ -1,7 +1,44 @@
+$(function () {
+    init();
+    addEvent();
+})
+
+function init() {
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+}
+
 function addEvent() {
     $("input").change(function () {
         doOnChange($input.val());
     });
+
+    //pop ad
+    $(".swiper-slide").click(function () {
+            $(".mask").css("z-index",10002).fadeIn(400);
+            $(".pop_ad").fadeIn(400);
+        }
+    );
+
+    $(".ad_close").click(function () {
+            $(".mask").fadeOut(400,function () {
+                $(this).css("z-index",10000);
+            });
+            $(".pop_ad").fadeOut(400);
+        }
+    );
+
 
     $(".choose_bar li").click(function () {
         $(".choose_bar li").find("a").removeClass("on");
@@ -50,11 +87,19 @@ function addEvent() {
     });
 
     $(".mask").on("click",function () {
-        $(".search_block").removeClass("search_block_fixed");
-        $(".choose_bar").removeClass("choose_bar_fixed");
-        $(this).hide();
-        $(".choose_panel").hide();
-        $(".choose_bar li").find("a").removeClass("on");
+        if($("pop_ad").css("display")=="block"){
+            $(".mask").fadeOut(400,function () {
+                $(this).css("z-index",10000);
+            });
+            $(".pop_ad").fadeOut(400);
+        }
+        else {
+            $(".search_block").removeClass("search_block_fixed");
+            $(".choose_bar").removeClass("choose_bar_fixed");
+            $(this).hide();
+            $(".choose_panel").hide();
+            $(".choose_bar li").find("a").removeClass("on");
+        }
     });
 
 }
@@ -149,21 +194,3 @@ function doOnChange(val) {
         // $btnSearch.text("搜索");
     }
 }
-
-$(function () {
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        loop: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-
-    addEvent();
-})

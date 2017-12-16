@@ -27,7 +27,7 @@
     width: 100%;
     border-bottom: 1px solid #f1f1f1;
     background-color: #fafafa;
-    z-index: 1;
+    z-index: 10001;
     position: relative;
     height: 50px;
     padding: 8px 0;
@@ -92,14 +92,14 @@
 #choose_block{
     width: 100%;
     background-color: #fafafa;
-    z-index: 1;
+    z-index: 10001;
     position: relative;
 }
 
 .choose_bar{
     background-color: #fafafa;
     position: relative;
-    z-index: 1;
+    z-index: 10001;
     width: 100%;
 }
 
@@ -335,3 +335,35 @@
     color: #666
 }
 
+
+.pop_ad{
+    display: none;
+    z-index: 10003;
+    left:50%;
+    top:50%;
+    position: absolute;
+    width: 78%;
+    margin-left: -39%;
+    margin-top: -45%;
+    border-radius: 6px;
+}
+
+.ad_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.ad_close{
+    position: absolute;
+    width: 24px;
+    right: -12px;
+    top: -12px;
+}
+.pop_ad .ad_img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}

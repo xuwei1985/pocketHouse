@@ -322,6 +322,15 @@ $this->title = '全部楼盘';
             </div>
             <div class="house_address">地址：上海市嘉定区江沙江路600弄</div>
         </li>
-
     </ul>
+</div>
+
+
+<div class="pop_ad">
+    <div class="ad_content">
+        <div class="ui-pop-colse">
+            <img class="ad_close" src="/images/icon_shut_yellow.png"/>
+        </div>
+        <a href="http://m.baidu.com"><img class="ad_img" src="https://fsxf.fangdd.com/xfcms/Fr15MNY8UMxAExCdbSYmOX-hLTu9.jpg" alt=""></a>
+    </div>
 </div>
