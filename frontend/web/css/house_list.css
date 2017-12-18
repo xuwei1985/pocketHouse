@@ -6,8 +6,18 @@
     src: url("../font/fdd.eot#iefix") format("embedded-opentype"), url("../font/fdd.woff") format("woff"), url("../font/fdd.ttf") format("truetype"), url("../font/fdd.svg") format("svg")
 }
 
-#main_page{
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+body.pop_modal{
+    position: fixed;
+    top: 0px;
+    left:0;
+}
 
+#main_page{
 }
 
 .swiper-pagination-bullet{background:#efefef;}
@@ -54,6 +64,36 @@
     margin: 0px auto;
     background: #efefef;
     border-radius: 34px;
+}
+
+.search_block_active .search_bar{
+    width: 85%;
+    overflow: hidden;
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex: 1;
+    position: relative;
+    height: 34px;
+    margin: 0px auto;
+    background: #efefef;
+    border-radius: 34px;
+    margin-left: 10px;
+}
+
+.search_block .search_cancel{
+    display: none;
+}
+
+.search_block_active .search_cancel{
+    display: block;
+    font-size: 14px;
+    color: #333;
+    position: absolute;
+    right: 10px;
+    top: 16px;
 }
 
 .inp-search{
@@ -175,8 +215,8 @@
     background: #fff;
     height: 320px;
     overflow: hidden;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;/*启用硬件加速*/
+    overflow-y: scroll;
+    /*-webkit-overflow-scrolling: touch;!*启用硬件加速*!*/
 }
 
 .choose_house_area{
@@ -214,6 +254,10 @@
     color: #00afe8;
 }
 
+.choose_house_area{
+    height: 320px;
+    overflow: hidden;
+}
 .choose_house_area li a{
     color: #333;
     text-decoration: none;
@@ -240,17 +284,18 @@
     width: 35%;
     height: 320px;
     overflow: hidden;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;/*启用硬件加速*/
+    overflow-y: scroll;
+    /*-webkit-overflow-scrolling: touch;!*启用硬件加速*!*/
 }
+
 
 .choose_house_area  .ui-area-right{
     float: left;
     width: 65%;
     height: 320px;
     overflow: hidden;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;/*启用硬件加速*/
+    overflow-y: scroll;
+    /*-webkit-overflow-scrolling: touch;!*启用硬件加速*!*/
 }
 
 .choose_house_area .ui-area-right li{

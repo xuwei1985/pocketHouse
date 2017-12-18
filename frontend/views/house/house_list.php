@@ -26,6 +26,7 @@ $this->title = '全部楼盘';
             <i class="ic-search"></i>
             <input class="inp-search" type="search" value="" maxlength="30" placeholder="请输入楼盘名称" id="search_keywords" name="search_keywords">
         </div>
+        <a class="search_cancel">取消</a>
     </div>
 
 

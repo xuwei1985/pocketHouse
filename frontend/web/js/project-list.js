@@ -33,7 +33,7 @@
                 $noHistory = $(".area-search-no-record", $holder),
                 $think = $(".area-search-think", $holder),
                 $noThink = $(".area-search-no-results", $holder),
-                $input = $holder.find("input[type=search].search-inp"),
+                $input = $holder.find("input[type=search]input[type=search].search-inp"),
                 $btnSearch = $(".search-btn", $holder),
                 storage = new SimpleStorage(),
                 last_search = getQueryParam("keyword"), // 最后进行搜索的关键词
